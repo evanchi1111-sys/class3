@@ -33,9 +33,6 @@
     .hero-art { position:relative; height:256px; }
     .cookie-art { position:relative; height:256px; display:flex; align-items:center; justify-content:center; }
     .cookie-art img { width:250px; height:250px; object-fit:cover; clip-path:circle(48%); filter:drop-shadow(0 13px 16px #7d4a2140); transform:rotate(8deg); }
-    .uniform-card { position:absolute; right:2%; top:7px; width:240px; padding:10px; background:#fffdf5; border:5px solid #fff; border-radius:20px; box-shadow:0 16px 34px #1552723d; transform:rotate(5deg); }
-    .uniform-card img { display:block; width:100%; aspect-ratio:4 / 3; object-fit:contain; object-position:center; border-radius:12px; background:#fffdf5; }
-    .uniform-card span { display:block; padding:8px 3px 0; color:var(--navy); text-align:center; font-weight:800; font-size:.9rem; }
     .wave { position:absolute; bottom:5px; left:0; color:var(--blue); font-size:3.4rem; letter-spacing:-.45em; opacity:.75; }
     main { padding:32px 0 62px; }
     section { scroll-margin-top:88px; margin:40px 0; }
@@ -48,7 +45,7 @@
     .contact { display:grid; grid-template-columns:1fr 1fr; gap:14px; }.contact a,.contact div { display:block; padding:17px; border-radius:13px; background:var(--sky); font-weight:700; }.contact a:hover { background:#d8f0f6; }.contact small { display:block; margin-top:2px; color:#60808b; font-weight:400; }.profile { display:grid; grid-template-columns:110px 1fr; gap:20px; align-items:center; }.profile-mark { width:110px; height:110px; display:grid; place-items:center; border-radius:32px; background:linear-gradient(135deg,var(--gold),#f5ce71); color:#fff; font-weight:800; font-size:1.5rem; transform:rotate(-4deg); }.profile dl { display:grid; grid-template-columns:84px 1fr; margin:0; gap:6px 12px; }.profile dt { font-weight:800; color:var(--navy); }.profile dd { margin:0; }
     .activity-note { display:flex; align-items:flex-start; gap:15px; padding:20px 22px; background:#fff; border:1px solid var(--line); border-radius:18px; box-shadow:0 7px 19px #1552720c; }.activity-icon { display:grid; place-items:center; flex:0 0 47px; height:47px; border-radius:14px; background:#daf5ee; color:#15745e; font-size:1.35rem; }.activity-note h3 { margin:0; color:var(--navy); }.activity-note p { margin:4px 0 0; color:#66818a; }.quick-links { margin:46px 0 0; padding:31px 0 37px; border-top:1px solid var(--line); }.quick-links h2 { margin:0 0 17px; color:var(--navy); font-size:1.4rem; }.quick-links p { margin:-9px 0 17px; color:#66818a; }.quick-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:13px; }.quick-grid a { min-height:88px; display:flex; flex-direction:column; justify-content:center; padding:15px; background:#fff; border:1px solid var(--line); border-radius:14px; color:var(--navy); font-weight:800; box-shadow:0 5px 14px #1552720a; transition:transform .18s,box-shadow .18s; }.quick-grid a:before { content:"↗"; color:var(--coral); font-size:1.25rem; line-height:1; margin-bottom:5px; }.quick-grid a:hover { transform:translateY(-3px); box-shadow:0 10px 19px #1552721b; }.quick-grid small { margin-top:3px; color:#68828a; font-weight:400; }
     footer { background:var(--navy); color:#d8eef3; text-align:center; padding:26px 15px; font-size:.9rem; } footer b { color:#fff; }
-    @media (max-width:760px) { .top .wrap { justify-content:center; }.top span:last-child { display:none; }.nav { min-height:60px; }.brand { font-size:.95rem; }.badge { width:35px;height:35px; }.nav nav { display:none; }.hero { padding:52px 0 72px; }.hero:before { right:8%; top:28px; }.hero-grid,.grid { grid-template-columns:1fr; }.mobile-break { display:block; }.hero-art,.cookie-art { height:190px; margin-top:-4px; }.cookie-art img { width:195px; height:195px; }.uniform-card { width:168px; right:4%; }.subject-grid,.history-grid { grid-template-columns:1fr; }.contact { grid-template-columns:1fr; }.profile { grid-template-columns:1fr; }.profile-mark { width:86px;height:86px; }.quick-grid { grid-template-columns:1fr 1fr; }.wrap { width:min(100% - 28px,1120px); } }
+    @media (max-width:760px) { .top .wrap { justify-content:center; }.top span:last-child { display:none; }.nav { min-height:60px; }.brand { font-size:.95rem; }.badge { width:35px;height:35px; }.nav nav { display:none; }.hero { padding:52px 0 72px; }.hero:before { right:8%; top:28px; }.hero-grid,.grid { grid-template-columns:1fr; }.mobile-break { display:block; }.hero-art,.cookie-art { height:190px; margin-top:-4px; }.cookie-art img { width:195px; height:195px; }.subject-grid,.history-grid { grid-template-columns:1fr; }.contact { grid-template-columns:1fr; }.profile { grid-template-columns:1fr; }.profile-mark { width:86px;height:86px; }.quick-grid { grid-template-columns:1fr 1fr; }.wrap { width:min(100% - 28px,1120px); } }
     /* 五年丙班：活潑班服識別風 */
     :root { --navy:#11183f; --blue:#286b9b; --sky:#e7f5fb; --cream:#fff9ec; --gold:#f4b51c; --ink:#17234c; --coral:#e95218; --line:#b8d7e6; }
     body { background-color:var(--cream); background-image:radial-gradient(#f4b51c2b 1px,transparent 1.5px); background-size:20px 20px; }
@@ -63,13 +60,16 @@
     .contact a,.contact div { border:2px solid transparent; border-radius:5px 15px 5px 15px; }.contact a:hover { background:#fff0c6; border-color:var(--coral); }.activity-note { border:2px solid var(--navy); border-radius:7px 22px 7px 22px; box-shadow:7px 7px 0 #b7e0f2; }.activity-icon { background:var(--gold); color:var(--navy); border-radius:50% 43% 50% 43%; }.profile-mark { background:var(--coral); border:4px solid var(--gold); border-radius:24px 40px 24px 40px; box-shadow:5px 5px 0 var(--navy); }.quick-links { border-top:3px dashed var(--navy); }.quick-grid a { border:2px solid var(--navy); border-radius:5px 15px 5px 15px; box-shadow:4px 4px 0 var(--gold); }.quick-grid a:hover { background:#fff0c6; transform:translate(-2px,-2px); box-shadow:7px 7px 0 var(--coral); }
     .homework-actions { display:flex; justify-content:flex-end; margin:14px 0 -4px; }.task-toggle { appearance:none; border:2px solid var(--gold); border-radius:4px; background:transparent; color:#fff; padding:7px 12px; font:inherit; font-size:.9rem; font-weight:800; cursor:pointer; }.task-toggle:hover,.task-toggle:focus-visible { background:var(--gold); color:var(--navy); }.homework[data-history="hidden"] .history-heading,.homework[data-history="hidden"] .history-grid { display:none; }
     .cookie-button { padding:0; border:0; background:transparent; cursor:pointer; }.cookie-button:focus-visible { outline:4px solid var(--gold); outline-offset:12px; border-radius:50%; }.toast { position:fixed; right:22px; bottom:22px; z-index:30; max-width:280px; padding:12px 16px; color:#fff; background:var(--navy); border:3px solid var(--gold); border-radius:5px 15px 5px 15px; box-shadow:5px 5px 0 var(--coral); transform:translateY(150%); opacity:0; transition:transform .25s ease,opacity .25s ease; }.toast.show { transform:translateY(0); opacity:1; }
+    .calendar td.is-today { background:#fff0c6; box-shadow:inset 0 0 0 3px var(--gold); }.calendar .none { display:block; margin-top:5px; color:#9aaab3; }
+    .menu-toggle { display:none; appearance:none; border:2px solid var(--navy); border-radius:4px; background:var(--gold); color:var(--navy); padding:6px 12px; font:inherit; font-size:.92rem; font-weight:800; cursor:pointer; box-shadow:3px 3px 0 var(--navy); }
+    @media (max-width:760px) { .nav { position:relative; }.menu-toggle { display:inline-block; }.nav nav.open { display:flex; position:absolute; top:100%; left:-14px; right:-14px; flex-direction:column; gap:0; padding:6px 20px 12px; background:#fffdf7; border-bottom:3px solid var(--gold); box-shadow:0 10px 18px #11183f26; }.nav nav.open a { padding:11px 2px; font-size:1rem; border-bottom:1px dashed var(--line); }.nav nav.open a:last-child { border-bottom:0; } }
     :focus-visible { outline:3px solid var(--coral); outline-offset:3px; } @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; } } @media (max-width:760px) { .hero h1 { font-size:clamp(2.4rem,13vw,3.5rem); }.cookie-art img { width:215px; height:215px; }.quick-grid { grid-template-columns:1fr; }.homework-actions { justify-content:flex-start; } }
   </style>
 </head>
 <body>
   <div class="top"><div class="wrap"><span>臺中市清水區清水國民小學</span><span>五年丙班班級網頁</span></div></div>
-  <header><div class="wrap nav"><a class="brand" href="#top"><span class="badge">丙</span>清水國小五年丙班</a><nav><a href="#notice">最新公告</a><a href="#calendar">本週行事曆</a><a href="#homework">當日作業</a><a href="#contact">親師溝通</a><a href="#activities">校外活動</a><a href="#profile">班級資料</a><a href="#quick-links">快速連結</a></nav></div></header>
-  <div class="hero" id="top"><div class="wrap hero-grid"><div><span class="eyebrow">歡迎來到五年丙班</span><h1>&nbsp;<br class="mobile-break">丙肩作戰！</h1><p class="slogan">同心向前走</p><p>我們在閱讀裡探索，在學習中成長；帶著好奇心與彼此的支持，一起寫下屬於五年丙班的精彩故事。</p></div><div class="cookie-art"><button class="cookie-button" id="cookie-button" type="button" aria-label="點擊餅乾，獲得班級加油訊息"><img src="Code_Generated_Image.png" alt="厚丙友餅乾插畫"></button></div></div></div>
+  <header><div class="wrap nav"><a class="brand" href="#top"><span class="badge">丙</span>清水國小五年丙班</a><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">☰ 選單</button><nav id="site-nav" aria-label="網站導覽"><a href="#notice">最新公告</a><a href="#calendar">本週行事曆</a><a href="#homework">當日作業</a><a href="#contact">親師溝通</a><a href="#activities">校外活動</a><a href="#profile">班級資料</a><a href="#quick-links">快速連結</a></nav></div></header>
+  <div class="hero" id="top"><div class="wrap hero-grid"><div><span class="eyebrow">歡迎來到五年丙班</span><h1>丙肩作戰！</h1><p class="slogan">同心向前走</p><p>我們在閱讀裡探索，在學習中成長；帶著好奇心與彼此的支持，一起寫下屬於五年丙班的精彩故事。</p></div><div class="cookie-art"><button class="cookie-button" id="cookie-button" type="button" aria-label="點擊餅乾，獲得班級加油訊息"><img src="Code_Generated_Image.png" alt="厚丙友餅乾插畫"></button></div></div></div>
   <main class="wrap">
     <section id="notice"><div class="section-title"><i></i><h2>最新公告</h2><span>請隨時留意更新</span></div><div class="card"><div class="card-body" id="notice-list">
       <article class="notice"><div class="date"><b>15</b><span>星期一</span></div><div><h3>本週學習與生活提醒</h3><p>請每日完成聯絡簿作業，並攜帶水壺、餐具與個人衛生用品。</p></div></article>
@@ -107,25 +107,76 @@
     };
     const dateLabel = value => value || "日期待公告";
     const tagClass = type => /考|測/.test(type) ? "test" : /攜|交|帶/.test(type) ? "bring" : "event";
+    const weekdayNames = "日一二三四五六";
+    const startOfDay = date => new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    const today = startOfDay(new Date());
+    // 試算表日期多半只寫「月/日」（如 9/15），依學年推算年份：8～12 月屬學年開始那年，1～7 月屬隔年
+    const parseDate = value => {
+      const text = String(value ?? "").replace(/／/g, "/").replace(/[年月]/g, "/").replace(/日/g, "");
+      const match = text.match(/(?:(\d{4})[\/-])?(\d{1,2})[\/-](\d{1,2})/);
+      if (!match) return null;
+      const month = Number(match[2]), day = Number(match[3]);
+      let year = match[1] ? Number(match[1]) : null;
+      if (!year) {
+        const schoolYearStart = today.getMonth() + 1 >= 8 ? today.getFullYear() : today.getFullYear() - 1;
+        year = month >= 8 ? schoolYearStart : schoolYearStart + 1;
+      }
+      const date = new Date(year, month - 1, day);
+      return Number.isNaN(date.getTime()) ? null : date;
+    };
+    const longDate = date => `${date.getMonth() + 1} 月 ${date.getDate()} 日　星期${weekdayNames[date.getDay()]}`;
+    const withDates = rows => rows.map(item => ({ item, date: parseDate(item["日期"]) }));
     const renderNotices = rows => {
       if (!rows.length) return;
-      document.querySelector("#notice-list").innerHTML = rows.slice(0, 5).map(item => {
-        const date = escapeHtml(dateLabel(item["日期"]));
-        const [month = "", day = ""] = date.replace(/／/g, "/").split(/[\/-]/).slice(-2);
-        return `<article class="notice"><div class="date"><b>${escapeHtml(day || date)}</b><span>${escapeHtml(month ? `${month} 月` : "公告")}</span></div><div><h3>${escapeHtml(item["標題"])}</h3><p>${escapeHtml(item["內容"])}</p></div></article>`;
+      // 先列即將到來的公告（由近到遠），不足 5 則再補最近已過的公告
+      const entries = withDates(rows);
+      const upcoming = entries.filter(entry => entry.date && entry.date >= today).sort((a, b) => a.date - b.date);
+      const past = entries.filter(entry => entry.date && entry.date < today).sort((a, b) => b.date - a.date);
+      const undated = entries.filter(entry => !entry.date);
+      document.querySelector("#notice-list").innerHTML = [...upcoming, ...past, ...undated].slice(0, 5).map(({ item, date }) => {
+        const day = date ? String(date.getDate()) : "";
+        const label = date ? `${date.getMonth() + 1} 月` : "公告";
+        return `<article class="notice"><div class="date"><b>${escapeHtml(day || "—")}</b><span>${escapeHtml(label)}</span></div><div><h3>${escapeHtml(item["標題"])}</h3><p>${escapeHtml(item["內容"])}</p></div></article>`;
       }).join("");
     };
     const renderCalendar = rows => {
-      if (!rows.length) return;
-      document.querySelector("#calendar-list").innerHTML = `<tr>${rows.slice(0, 5).map(item => `<td><b>${escapeHtml(dateLabel(item["日期"]))}</b><span class="tag ${tagClass(item["類型"])}">${escapeHtml(item["活動"])}${item["類型"] ? `・${escapeHtml(item["類型"])}` : ""}</span></td>`).join("")}</tr>`;
+      const entries = withDates(rows).filter(entry => entry.date && entry.item["活動"]);
+      // 顯示本週一～五；週末時顯示下一週
+      const monday = new Date(today);
+      const weekday = today.getDay();
+      monday.setDate(today.getDate() + (weekday === 0 ? 1 : weekday === 6 ? 2 : 1 - weekday));
+      const cells = [0, 1, 2, 3, 4].map(offset => {
+        const day = new Date(monday);
+        day.setDate(monday.getDate() + offset);
+        const events = entries.filter(entry => entry.date.getTime() === day.getTime());
+        const tags = events.length
+          ? events.map(({ item }) => `<span class="tag ${tagClass(item["類型"])}">${escapeHtml(item["活動"])}${item["類型"] ? `・${escapeHtml(item["類型"])}` : ""}</span>`).join("<br>")
+          : `<span class="none">—</span>`;
+        const isToday = day.getTime() === today.getTime();
+        return `<td${isToday ? ' class="is-today"' : ""}><b>${day.getMonth() + 1}／${day.getDate()}${isToday ? "（今天）" : ""}</b>${tags}</td>`;
+      });
+      document.querySelector("#calendar-list").innerHTML = `<tr>${cells.join("")}</tr>`;
     };
     const renderHomework = rows => {
       if (!rows.length) return;
-      const current = rows[0];
-      document.querySelector("#homework-date").textContent = dateLabel(current["日期"]);
+      // 依日期由新到舊排列；「當日作業」取今天或之前最新的一筆
+      const dated = withDates(rows).filter(entry => entry.date).sort((a, b) => b.date - a.date);
+      let current, history;
+      if (dated.length) {
+        const currentEntry = dated.find(entry => entry.date <= today) || dated[dated.length - 1];
+        current = currentEntry.item;
+        history = dated.filter(entry => entry.date < currentEntry.date).slice(0, 2).map(entry => entry.item);
+        document.querySelector("#homework-date").textContent = longDate(currentEntry.date);
+      } else {
+        // 沒有可辨識的日期時，視最後一列為最新
+        const ordered = [...rows].reverse();
+        current = ordered[0];
+        history = ordered.slice(1, 3);
+        document.querySelector("#homework-date").textContent = dateLabel(current["日期"]);
+      }
       document.querySelector("#homework-current").innerHTML = [["國語", current["國語"]], ["數學", current["數學"]], ["其他提醒", current["其他提醒"]]].map(([subject, work]) => `<div class="subject"><b>${subject}</b><p>${escapeHtml(work || "無")}</p></div>`).join("");
-      const history = rows.slice(1, 3);
-      if (history.length) document.querySelector("#homework-history").innerHTML = history.map(item => `<article class="history-item"><h3>${escapeHtml(dateLabel(item["日期"]))}</h3><p><b>國語：</b>${escapeHtml(item["國語"] || "無")}</p><p><b>數學：</b>${escapeHtml(item["數學"] || "無")}</p><p><b>提醒：</b>${escapeHtml(item["其他提醒"] || "無")}</p></article>`).join("");
+      const historyLabel = item => { const date = parseDate(item["日期"]); return date ? longDate(date) : dateLabel(item["日期"]); };
+      if (history.length) document.querySelector("#homework-history").innerHTML = history.map(item => `<article class="history-item"><h3>${escapeHtml(historyLabel(item))}</h3><p><b>國語：</b>${escapeHtml(item["國語"] || "無")}</p><p><b>數學：</b>${escapeHtml(item["數學"] || "無")}</p><p><b>提醒：</b>${escapeHtml(item["其他提醒"] || "無")}</p></article>`).join("");
     };
     const renderActivities = rows => {
       if (!rows.length) return;
@@ -142,6 +193,16 @@
       historyToggle.textContent = isHidden ? "收合前兩日紀錄" : "查看前兩日紀錄";
       historyToggle.setAttribute("aria-expanded", String(isHidden));
     });
+    const menuToggle = document.querySelector("#menu-toggle");
+    const siteNav = document.querySelector("#site-nav");
+    const setMenu = open => {
+      siteNav.classList.toggle("open", open);
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.textContent = open ? "✕ 關閉" : "☰ 選單";
+    };
+    menuToggle.addEventListener("click", () => setMenu(!siteNav.classList.contains("open")));
+    siteNav.addEventListener("click", event => { if (event.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", event => { if (event.key === "Escape" && siteNav.classList.contains("open")) { setMenu(false); menuToggle.focus(); } });
     const toast = document.querySelector("#toast");
     let toastTimer;
     document.querySelector("#cookie-button").addEventListener("click", () => {
