@@ -40,3 +40,7 @@
 ## 部署
 
 倉庫 **Settings** → **Pages** → Branch 選 `main`、資料夾 `/ (root)`。
+
+## 授權
+
+以 [MIT 授權](LICENSE) 釋出，Copyright (c) 2026 evanchi1111-sys。
